@@ -13,7 +13,7 @@ The question now is simple. Suppose that there is a couple $(x^\*, y^\*) \in X \
 In order to give a precise answer to the previous question, we should expect to know --- precisely --- the set of rules that describes the establishing of an interaction. As we mentioned, our idea is to try to exploit information contained in data in order to construct empirically some sort of description --- even an approximation --- of them.
 Therefore, we make a substantial preliminary assumption
 
-Every $x \in X$ and every $y \in Y$ are equipped with a --- not observable --- <b> information packet </b>. Let us denot as $\mathscr I_X$ and $\mathscr I_Y$ the spaces of information packets for $X$ and $Y$.
+Every $x \in X$ and every $y \in Y$ are equipped with a --- not observable --- <b> information packet </b>. Let us denot as $\mathscr I_X$ and $\mathscr I_Y$ the spaces of information packets for $X$ and $Y$ and let us describe two suitable functions $h_X : X \rightarrow \mathscr I_X$ and $h_Y : Y \rightarrow \mathscr I_Y$ which simply extract the information packet (obviously we are talking in an abstract sense, since those information are not known). 
 
 
 
