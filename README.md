@@ -6,8 +6,8 @@ The current project tries to tackle this problem by extracting information from 
 # Description of the problem
 Suppose that we are able to produce some kind of representation of diseases and chemicals. Let us denote as $X$ the set of diseases, and $Y$ the set of chemicals.
 Mathematically speaking, we can define a relationship over the cartesian product of this two sets and we can denote it as $E \subset X \times Y$, representing the known interactions, which are the observed ones.
-Let us now denote as $ E^* $ the subset of the cartesian product that represents the true relationship, which is unknown.
-The question now is simple. Suppose that there is a couple $(x^*, y^*) \in X \times Y$ that does not belong to $E$. What is the likelihood of it appearing in $ E^* $?
+Let us now denote as $ E^\* $ the subset of the cartesian product that represents the true relationship, which is unknown.
+The question now is simple. Suppose that there is a couple $(x^\*, y^\*) \in X \times Y$ that does not belong to $E$. What is the likelihood of it appearing in $ E^\* $?
 
 
 
