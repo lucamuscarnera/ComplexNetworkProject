@@ -18,10 +18,13 @@ Every $x \in X$ and every $y \in Y$ are equipped with a --- not observable --- <
 We make therefore another assumption; the generation of the interaction among objects is a solely a function of the two information packets involved. Formally
 
 $$
-\exists \phi : \mathscr I_X \times \mathscr I_Y \rightarrow \{0,1\}
+\exists \phi : \mathscr I_X \times \mathscr I_Y \rightarrow (0,1)
 \textrm{ such that }
 \phi(h_X(x),h_Y(y)) = 1 \iff (x,y) \in E^\* \ \ \forall x,y \in X \times Y
 $$
+
+Basically, we are assuming that exists a function that given two information packets return a probability of linkage.
+Apparently we aren't able to treat this problem. In fact we don't know either $h_X,h_Y$ nor $\phi$.
 
 
 
