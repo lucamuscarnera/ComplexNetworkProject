@@ -16,6 +16,7 @@ Therefore, we make a substantial preliminary assumption
 Every $x \in X$ and every $y \in Y$ are equipped with a --- not observable --- <b> information packet </b>. Let us denot as $\mathscr I_X$ and $\mathscr I_Y$ the spaces of information packets for $X$ and $Y$ and let us describe two suitable functions $h_X : X \rightarrow \mathscr I_X$ and $h_Y : Y \rightarrow \mathscr I_Y$ which simply extract the information packet (obviously we are talking in an abstract sense, since those information are not known). 
 
 We make therefore another assumption; the generation of the interaction among objects is a solely a function of the two information packets involved. Formally
+
 $$
 \exists \phi : \mathscrI_X \times \mathscrI_Y \rightarrow \{0,1\}
 $$
