@@ -18,7 +18,7 @@ Every $x \in X$ and every $y \in Y$ are equipped with a --- not observable --- <
 We make therefore another assumption; the generation of the interaction among objects is a solely a function of the two information packets involved. Formally
 
 $$
-\exists \phi : \mathscrI_X \times \mathscrI_Y \rightarrow \{0,1\}
+\exists \phi : \mathscr I_X \times \mathscr I_Y \rightarrow \{0,1\}
 $$
 
 
