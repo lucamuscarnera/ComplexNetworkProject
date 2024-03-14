@@ -19,6 +19,8 @@ We make therefore another assumption; the generation of the interaction among ob
 
 $$
 \exists \phi : \mathscr I_X \times \mathscr I_Y \rightarrow \{0,1\}
+\textrm{ such that }
+\phi(x,y) = 1 \iff (x,y) \in E^\* \ \ \forall x,y \in X \times Y
 $$
 
 
