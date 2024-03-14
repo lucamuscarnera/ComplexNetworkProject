@@ -25,8 +25,13 @@ $$
 
 Basically, we are assuming that exists a function that given two information packets return a probability of linkage.
 Apparently we aren't able to treat this problem. In fact we don't know either $h_X,h_Y$ nor $\phi$.
-
-
+Suppose now that both $\mathscr I_X$ and $\mathscr I_Y$ are isomorphic to euclidean spaces, which means that it suffices to have a finite number of real parameters to provide a full description of them.
+We make now a strong statement: since we are not directly able to describe $h_X$ and $h_Y$ we will describe them in terms of <b> action against objects in the two sets </b>.
+Hence instead of retrieving the map $h_X : X \rightarrow \mathscr I_X \sim \mathbb R^n$ we will simply try to retrieve, for each $x \in X$, its image thru this unknown map. And now an even stronger assumption:
+Let $f : X \times Y \rightarrow (0,1)$ we can contruct a mapping $h_x : X \mapsto \mathbb R^N$ and $h_y: Y \mapsto \mathbb R^N$ such that
+$$
+      \underset{N \rightarrow \infty}{\textrm{lim}} || f(\cdot,\cdot) - h_X(\cdot)^T h_Y(\cdot) || = 0
+$$
 
 %Lo scopo del progetto é quello di analizzare un grafo bipartito $\mathcal G(X,Y,E)$ dove $X$ é l'insieme dei DISEASE , $Y$ é l'insieme dei CHEMICALS e $E \subset X \times Y$ é l'insieme dei collegamenti che %indicano un'interazione malattia-farmaco.<br>
 %L'algoritmo chiave é il seguente.<br>
