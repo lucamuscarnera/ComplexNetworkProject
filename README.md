@@ -2,6 +2,13 @@
 Understanding the causes behind the interaction among pharmaceutical drugs and diseases is not an easy task. 
 Even if the expertise of doctors can certainly build some level of intuition, it is important to understand that those kind of relationships may be subtle and difficult to discover.
 The current project tries to tackle this problem by extracting information from a suitable bipartite graph, that represents pharmacological interaction among drugs and diseases.
+
+# Description of the problem
+Suppose that we are able to produce some kind of representation of diseases and chemicals. Let us denote as $X$ the set of diseases, and $Y$ the set of chemicals.
+Mathematically speaking, we can define a relationship over the cartesian product of this two sets and we can denote it as $E \subset X \times Y$, representing the known interactions, which are the observed ones.
+Let us now denote as $E^\*$ the subset of the cartesian product that represents the true relationship, which is unknown.
+The question now is simple. Suppose that there is a couple $(x^\*, y^\*) \in X \times Y$ that does not belong to $E$. What is the likelihood of it appearing in $E^\*$?
+
 In particular given a bipartite graph whose <b> biadjacency matrix </b> $B$ is defined such that
 
 $$
@@ -21,11 +28,7 @@ $$
 \end{cases}     
 $$
 
-# Description of the problem
-Suppose that we are able to produce some kind of representation of diseases and chemicals. Let us denote as $X$ the set of diseases, and $Y$ the set of chemicals.
-Mathematically speaking, we can define a relationship over the cartesian product of this two sets and we can denote it as $E \subset X \times Y$, representing the known interactions, which are the observed ones.
-Let us now denote as $E^\*$ the subset of the cartesian product that represents the true relationship, which is unknown.
-The question now is simple. Suppose that there is a couple $(x^\*, y^\*) \in X \times Y$ that does not belong to $E$. What is the likelihood of it appearing in $E^\*$?
+Trying, therefore to overcome uncertainty in observed data.
 
 # Modellistic Assumption
 In order to give a precise answer to the previous question, we should expect to know --- precisely --- the set of rules that describes the establishing of an interaction. As we mentioned, our idea is to try to exploit information contained in data in order to construct empirically some sort of description --- even an approximation --- of them.
