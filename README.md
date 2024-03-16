@@ -1,7 +1,25 @@
 # Complex Networks Project
 Understanding the causes behind the interaction among pharmaceutical drugs and diseases is not an easy task. 
-Even if the expertise of doctors can certainly build some level of intuition, it is important to understand that those kind of relationship may be subtle and difficult to discover.
+Even if the expertise of doctors can certainly build some level of intuition, it is important to understand that those kind of relationships may be subtle and difficult to discover.
 The current project tries to tackle this problem by extracting information from a suitable bipartite graph, that represents pharmacological interaction among drugs and diseases.
+In particular given a bipartite graph whose <b> biadjacency matrix </b> $B$ is defined such that
+
+$$
+B_{ij} = \begin{cases}
+      1 & \textrm{ if the drug } i \textrm{ interacts with the disease } j \\
+      0 & \textrm{ if there is no interaction} \\
+      0.5 & \textrm{ there is no prior information about interaction }
+\end{cases}     
+$$
+
+We would like to construct a new matrix $\hat B$ such that
+
+$$
+\hat B_{ij} = \begin{cases}
+      1 & \textrm{ if the drug } i \textrm{ interacts with the disease } j \\
+      0 & \textrm{ if there is no interaction}
+\end{cases}     
+$$
 
 # Description of the problem
 Suppose that we are able to produce some kind of representation of diseases and chemicals. Let us denote as $X$ the set of diseases, and $Y$ the set of chemicals.
@@ -23,7 +41,7 @@ $$
 \phi(h_X(x),h_Y(y)) = 1 \iff (x,y) \in E^\* \ \ \forall x,y \in X \times Y
 $$
 
-Basically, we are assuming that exists a function that given two information packets return a probability of linkage.
+Basically, we are assuming that there exists a function that given two information packets return a probability of interaction.
 Apparently we aren't able to treat this problem. In fact we don't know either $h_X,h_Y$ nor $\phi$.
 Suppose now that both $\mathscr I_X$ and $\mathscr I_Y$ are isomorphic to euclidean spaces, which means that it suffices to have a finite number of real parameters to provide a full description of them.
 We make now a strong statement: since we are not directly able to describe $h_X$ and $h_Y$ we will describe them in terms of <b> action against objects in the two sets </b>.
