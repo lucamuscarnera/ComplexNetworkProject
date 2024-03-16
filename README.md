@@ -41,7 +41,7 @@ We make therefore another assumption; the generation of the interaction among ob
 $$
 \exists \phi : \mathscr I_X \times \mathscr I_Y \rightarrow (0,1)
 \textrm{ such that }
-\phi(h_X(x),h_Y(y)) = 1 \iff (x,y) \in E^\* \ \ \forall x,y \in X \times Y
+\phi(h_X(x),h_Y(y)) \approx 1 \iff (x,y) \in E^\* \ \ \forall x,y \in X \times Y
 $$
 
 Basically, we are assuming that there exists a function that given two information packets return a probability of interaction.
@@ -52,8 +52,10 @@ Hence instead of retrieving the map $h_X : X \rightarrow \mathscr I_X \sim \math
 Let $f : X \times Y \rightarrow (0,1)$ we can contruct a mapping $h_x : X \mapsto \mathbb R^N$ and $h_y: Y \mapsto \mathbb R^N$ such that
 
 $$
-      \underset{N \rightarrow \infty}{\textrm{lim}} || f(\cdot,\cdot) - h_X(\cdot)^T h_Y(\cdot) || = 0
+      \underset{N \rightarrow \infty}{\textrm{lim}} || f(\cdot,\cdot) - \sigma \left( h_X(\cdot)^T h_Y(\cdot) \right) || = 0
 $$
+
+where $\sigma$ is the  usual sigmoid function.
 
 We will not include proofs of this statement, but as a proof of concept you can imagine this procedure as very similar to overfitting in linear regression.
 
