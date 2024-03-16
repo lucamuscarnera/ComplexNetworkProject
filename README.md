@@ -60,16 +60,13 @@ where $\sigma$ is the  usual sigmoid function.
 We will not include proofs of this statement, but as a proof of concept you can imagine this procedure as very similar to overfitting in logistic regression.
 
 # Solution to the problem
-
 Given the aforementioned consideration the discussion can be casted into an optimization problem
-
 $$
 \underset{X \in \mathbb R^{N_c,n},Y \in \mathbb R^{N_d,n}}{\textrm{Minimize}} || B - \sigma\left( XY^T \right) ||^2 
 $$
+In the very same fashion of a logistic regression, but with "data acting also as weights vectors"
 
+# Continuous relaxation of the problem
+Unlike logistic regression,t he duality among weights and data make the problem non-convex.
+Our strategy is to use a non convex optimization algorith in order to solve it, by creating a sequence of continous relaxations of the problem.
 
-%Lo scopo del progetto é quello di analizzare un grafo bipartito $\mathcal G(X,Y,E)$ dove $X$ é l'insieme dei DISEASE , $Y$ é l'insieme dei CHEMICALS e $E \subset X \times Y$ é l'insieme dei collegamenti che %indicano un'interazione malattia-farmaco.<br>
-%L'algoritmo chiave é il seguente.<br>
-%Immaginiamo che ogni DISEASE $x$ possieda un pacchetto di informazione ${\bf v_x}$ e ogni CHEMICAL $y$ possieda un pacchetto di informazione ${\bf w_y}$ <br>
-%Denotiamo come $V := \{ {\bf v_x} : x \in X \}$ e $W := \{ {\bf w_y} : y \in Y \}$ <br>
-%Consideriamo la mappa $a : V \times W \rightarrow (0,1)$ , con $a({\bf v_x},{\bf w_y}) = tanh( {\bf v_x} \cdot {\bf w_y} )$
