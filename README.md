@@ -64,7 +64,7 @@ We will not include proofs of this statement, but as a proof of concept you can 
 Given the aforementioned consideration the discussion can be casted into an optimization problem
 
 $$
-\textrm{Minimize } || B - \sigma\left( XY^T \right) ||^2 
+\underset{X \in \mathbb R^{N_c,n},Y \in \mathbb R^{N_d,n}}{\textrm{Minimize}} || B - \sigma\left( XY^T \right) ||^2 
 $$
 
 
