@@ -57,7 +57,16 @@ $$
 
 where $\sigma$ is the  usual sigmoid function.
 
-We will not include proofs of this statement, but as a proof of concept you can imagine this procedure as very similar to overfitting in linear regression.
+We will not include proofs of this statement, but as a proof of concept you can imagine this procedure as very similar to overfitting in logistic regression.
+
+# Solution to the problem
+
+Given the aforementioned consideration the discussion can be casted into an optimization problem
+
+$$
+\textrm{Minimize } || B - \sigma\left( XY^T \right) ||^2 
+$$
+
 
 %Lo scopo del progetto é quello di analizzare un grafo bipartito $\mathcal G(X,Y,E)$ dove $X$ é l'insieme dei DISEASE , $Y$ é l'insieme dei CHEMICALS e $E \subset X \times Y$ é l'insieme dei collegamenti che %indicano un'interazione malattia-farmaco.<br>
 %L'algoritmo chiave é il seguente.<br>
